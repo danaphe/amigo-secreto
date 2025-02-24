@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: #ffffff;
+    --color-secondary: #bc8f26;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
+    --color-button: #359ca8;
     --color-button-hover: #e55720;
     --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-white: #4f231e;
 }
 
 /* Estilos generales */
@@ -90,6 +90,8 @@ body {
 .button-container {
     width: 300px;
     justify-content: center;
+    display: flex;
+    gap: 10px
 }
 
 /* Estilos de entrada de texto */
@@ -125,6 +127,15 @@ button {
     background-color: #a1a1a1;
 }
 
+.reiniciar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
 /* Listas */
 ul {
     list-style-type: none;
@@ -134,13 +145,30 @@ ul {
     margin: 20px 0;
 }
 
-li{
-    margin-bottom: 10px;
-}
+ul {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  li {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #db0606;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -164,3 +192,37 @@ li{
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.footer {
+    text-align: right;
+
+}
+
+.copyright{
+    background-color: #bc8f26;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;    width: 20%;
+    text-align: right;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+}
+
+.copyright span {
+    font-weight: bold;
+    color: #555;
+  }
+
+  .copyright small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #888;
+  }
+
+  .copyright:hover {
+    background-color: #b09452;
+  }
