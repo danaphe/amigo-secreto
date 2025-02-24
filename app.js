@@ -18,6 +18,7 @@ function agregarAmigo(){
 function actualizarLista(){
     let lista= document.getElementById("listaAmigos");
     lista.innerHTML="";
+    //se actualizan los campos si se agrega un nuevo amigo, se debera sortear de nuevo y el ganador sera otro
     ganador.innerHTML="";
     for (let i=0; i< listaAmigos.length ;i++){
         lista.innerHTML += `<li>${listaAmigos[i]}</li>`;
